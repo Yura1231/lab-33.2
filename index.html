@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Облік кімнат</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Облік кімнат гуртожитку</h1>
+        <form id="residentForm">
+            <label for="roomType">Тип кімнати:</label>
+            <select id="roomType">
+                <option value="double">Двомісна</option>
+                <option value="triple">Тримісна</option>
+            </select>
+            <label for="fullName">ПІБ:</label>
+            <input id="fullName" type="text" placeholder="ПІБ мешканця" />
+            <label for="birthDate">Дата народження:</label>
+            <input id="birthDate" type="date" />
+            <label for="faculty">Факультет:</label>
+            <input id="faculty" type="text" placeholder="Факультет" />
+            <label for="group">Група:</label>
+            <input id="group" type="text" placeholder="Група" />
+            <label for="educationType">Форма навчання:</label>
+            <select id="educationType">
+                <option value="state">Державне замовлення</option>
+                <option value="private">Контракт</option>
+            </select>
+            <button type="button" id="addResidentBtn">Додати мешканця</button>
+            <button id="cloneRoomBtn">Дублювати кімнату</button>
+            <button id="downloadReportBtn">Завантажити звіт</button>
+            <div id="roomsList"></div>
+        </form>
+        <div id="report" class="report"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
